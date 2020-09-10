@@ -19,9 +19,9 @@
 
   
  <!-- <hr><hr><hr> -->
-<button id="clean">c</button><button id="division">÷</button><button id="multiplication">×</button><button id="back">-></button> <br>
+<button id="clean" onclick= clear()>c</button><button id="division" onclick=Divid_fill()>÷</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="back">-></button> <br>
 
-<button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus">-</button><button id="percent">%</button> <br>
+<button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus" onclick=Subtract_fill()>-</button><button id="percent">%</button> <br>
 
 <button id="4" onclick= no4()>4</button><button id="5" onclick= no5()>5</button><button id="6" onclick= no6()>6</button><button id="plus" onclick= plus_fill()>+</button><button id=".">.</button><br>
 
@@ -184,7 +184,7 @@
     {
     type = 1;
     no1_txt = document.getElementById("txt_input").value;
-    parseInt(no1_txt);
+    //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
 
@@ -192,7 +192,7 @@
     {
       type = 2;
       no1_txt = document.getElementById("txt_input").value;
-    parseInt(no1_txt);
+    //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
 
@@ -200,7 +200,7 @@
     {
       type = 3;
       no1_txt = document.getElementById("txt_input").value;
-    parseInt(no1_txt);
+    //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
 
@@ -208,7 +208,7 @@
     {
       type = 4;
       no1_txt = document.getElementById("txt_input").value;
-    parseInt(no1_txt);
+    //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
 //انتهاء تاك معرفة نوع العملية المراد العمل بهى
@@ -222,15 +222,44 @@
     {
       
       no2_txt = document.getElementById("txt_input").value;
-      parseInt(no2_txt);
+      //parseInt(no2_txt);
 
       if(type = 1)
       {
-        result = no1_txt + no2_txt;
+        result = parseInt (no1_txt) + parseInt (no2_txt);
+        document.getElementById("txt_res").value = parseInt(result);
+      }
+
+      if(type = 2)
+      {
+        result = parseInt (no1_txt) - parseInt (no2_txt);
+        document.getElementById("txt_res").value = parseInt(result);
+      }
+
+      if(type = 3)
+      {
+        result = parseInt (no1_txt) * parseInt (no2_txt);
+        document.getElementById("txt_res").value = parseInt(result);
+      }
+
+      if(type = 4)
+      {
+        result = parseInt (no1_txt) / parseInt (no2_txt);
         document.getElementById("txt_res").value = parseInt(result);
       }
 
 
+    }
+  </script>
+
+  <script>
+    //clear btn
+    var clean = " "
+
+    function clear()
+    
+    {
+      document.getElementById("txt_input").value =clean.value;
     }
   </script>
  
