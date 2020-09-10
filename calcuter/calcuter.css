@@ -3,6 +3,7 @@ body
    font-family: sans-serif;
 padding: 0;
 display: flex;
+
  margin: 0;
  min-height: 100vh;
  justify-items: center;
@@ -11,8 +12,46 @@ display: flex;
  place-items: center;
 }
 
+.bskt
+{
+   
+  
+ 
+position: relative;
+-webkit-box-reflect:below -12px linear-gradient(
+transparent, rgba(0, 0, 0, 0.2));
+}
+.bskt span
+{
 
-button 
+position: relative;
+display: inline-block;
+color: #fff;
+font-size:2em;
+text-transform: uppercase;
+animation: animate 1s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate
+{
+0%
+{
+transform: translateY(0px);
+}
+20%
+{
+    transform: translateY(-20px);
+    }
+    40%,100%
+{
+ transform: translateY(0px);
+}
+    
+
+}
+  
+button
 {
 
     /* padding:10px; */
@@ -30,11 +69,17 @@ border-collapse: collapse;
 border: 1px solid rgb(26, 24, 24);
 background-color:#060c12 ;
 }
+
+
+
 button:hover{
 color:#414850 ;
 }
+
+
+
 button:active{
-color: purple
+color: purple;
 }
 
 
