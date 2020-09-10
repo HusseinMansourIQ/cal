@@ -14,16 +14,18 @@
 <br><br>
 <div>
   
-<p id="space">&nbsp;&nbsp;&nbsp; </p>
- <p id="result">result : </p> 
+  <input type="text" id="txt_input" />
+  <input type="text" id="txt_res" />
+
+  
  <!-- <hr><hr><hr> -->
 <button id="clean">c</button><button id="division">÷</button><button id="multiplication">×</button><button id="back">-></button> <br>
 
-<button id="1" >1</button><button id="2">2</button><button id="3">3</button><button id="minus">-</button><button id="percent">%</button> <br>
+<button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus">-</button><button id="percent">%</button> <br>
 
-<button id="4">4</button><button id="5">5</button><button id="6">6</button><button id="plus">+</button><button id=".">.</button><br>
+<button id="4" onclick= no4()>4</button><button id="5" onclick= no5()>5</button><button id="6" onclick= no6()>6</button><button id="plus">+</button><button id=".">.</button><br>
 
-<button id="7">7</button><button id="8">8</botton><button id="9">9</button><button id="zero">0</button><button id="equal">=</button> <br>
+<button id="7" onclick= no7()>7</button><button id="8" onclick= no8()>8</botton><button id="9" onclick= no9()>9</button><button id="zero" onclick= no0()>0</button><button id="equal">=</button> <br>
      
 
 
@@ -44,6 +46,134 @@
   <span style="--i:9;">o</span> 
   <span style="--i:10;">r</span> 
   </div>
+
+  <script>
+
+//هذا التاك لملء ال انبوت تيكست بالبيانات عن طريق البوتنات
+
+    var input = 0 ;
+
+    function no1 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"1"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no2 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"2"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no3 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"3"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no4 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"4"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no5 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"5"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no6 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"6"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no7 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"7"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no8 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"8"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no9 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"9"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+    function no0 ()
+    {
+      input = document.getElementById("txt_input").value;
+     input = input+"0"; 
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
+
+  </script>
  
    
 
