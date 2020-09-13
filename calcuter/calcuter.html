@@ -175,11 +175,8 @@
     function no_dot ()
     {
       
-      input = document.getElementById("txt_input").value;
-     input = input+"."
-
      
-     document.getElementById("txt_input").value= input;
+     document.getElementById("txt_input").value= input+".";
 
 
 
@@ -286,17 +283,19 @@
     function clear()
     
     {
-      document.getElementById("txt_input").value=0 ;
-    }
-
-     function clear_all()
-       {
-        document.getElementById("txt_input").value= 0;
+      document.getElementById("txt_input").value= 0;
         document.getElementById("txt_res").value =0;
         type=0;
         no2_txt = 0;
         no1_txt = 0;
 
+    }
+
+     function clear_all()
+       {
+        var m1 = document.getElementById(txt_input).value;
+        
+        document.getElementById("txt_input").value =mi.substring(0,mi.length - 1);
        }
      
   </script>
