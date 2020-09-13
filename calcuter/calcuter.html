@@ -21,9 +21,9 @@
  <!-- <hr><hr><hr> -->
 <button id="clean" onclick= clear()>c</button><button id="division" onclick=Divid_fill()>÷</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="back" onclick=clear_all()>-></button> <br>
 
-<button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus" onclick=Subtract_fill()>-</button><button id="percent">%</button> <br>
+<button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus" onclick=Subtract_fill()>-</button><button id="percent" onclick=mod()>%</button> <br>
 
-<button id="4" onclick= no4()>4</button><button id="5" onclick= no5()>5</button><button id="6" onclick= no6()>6</button><button id="plus" onclick= plus_fill()>+</button><button id=".">.</button><br>
+<button id="4" onclick= no4()>4</button><button id="5" onclick= no5()>5</button><button id="6" onclick= no6()>6</button><button id="plus" onclick= plus_fill()>+</button><button id="." onclick=no_dot()>.</button><br>
 
 <button id="7" onclick= no7()>7</button><button id="8" onclick= no8()>8</botton><button id="9" onclick= no9()>9</button><button id="zero" onclick= no0()>0</button><button id="equal" onclick=the_operation() >=</button> <br>
      
@@ -51,7 +51,7 @@
 
 //هذا التاك لملء ال انبوت تيكست بالبيانات عن طريق البوتنات
 
-    var input = 0 ;
+    var input  ;
 
     function no1 ()
     {
@@ -171,6 +171,19 @@
 
 
     }
+
+    function no_dot ()
+    {
+      
+      input = document.getElementById("txt_input").value;
+     input = input+"."
+
+     
+     document.getElementById("txt_input").value= input;
+
+
+
+    }
          //انتهاء تفعيل البوتنات 
 
 
@@ -211,6 +224,14 @@
     //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
+
+    function mod()
+    {
+      type = 5;
+      no1_txt = document.getElementById("txt_input").value;
+    //parseInt(no1_txt);
+    document.getElementById("txt_input").value = "";
+    }
 //انتهاء تاك معرفة نوع العملية المراد العمل بهى
   </script>
 
@@ -226,7 +247,7 @@
 
       if(type === 1)
       {
-        result = parseInt (no1_txt) + parseInt (no2_txt);
+        result = parseFloat (no1_txt) + parseFloat (no2_txt);
         document.getElementById("txt_res").value = parseInt(result);
       }
 
@@ -245,6 +266,12 @@
       if(type === 4)
       {
         result = parseFloat (no1_txt) / parseFloat (no2_txt);
+        document.getElementById("txt_res").value = parseFloat(result);
+      }
+
+      if(type === 5)
+      {
+        result = parseFloat (no1_txt) % parseFloat (no2_txt);
         document.getElementById("txt_res").value = parseFloat(result);
       }
 
