@@ -14,7 +14,7 @@
 <br><br>
 <div id="bskot">
   
-  <input type="number" id="txt_input" />
+  <input type="text" id="txt_input" />
   <input type="text" id="txt_res" />
 
   
@@ -246,7 +246,7 @@
       if(type === 1)
       {
         result = parseFloat (no1_txt) + parseFloat (no2_txt);
-        document.getElementById("txt_res").value = parseInt(result);
+        document.getElementById("txt_res").value = parseFloat(result);
       }
 
       if(type === 2)
