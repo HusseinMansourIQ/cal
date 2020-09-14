@@ -174,9 +174,10 @@
 
     function no_dot ()
     {
+      var d = ".";
       
      
-     document.getElementById("txt_input").value= input+".";
+     document.getElementById("txt_input").value= input+parseFloat(d);
 
 
 
@@ -293,9 +294,12 @@
 
      function clear_all()
        {
-        var m1 = document.getElementById(txt_input).value;
+        var mi = document.getElementById("txt_input").value;
+        var re = mi.substring(0, mi.length - 1);
+        console.log(re);
         
-        document.getElementById("txt_input").value =mi.substring(0,mi.length - 1);
+        document.getElementById("txt_input").value =re;
+
        }
      
   </script>
