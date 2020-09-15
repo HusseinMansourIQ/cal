@@ -151,7 +151,7 @@ background-color: orangered;
 #result{
     
 background-color: white;
-height: 42px;
+height: 38px;
 }
 #space
 {
@@ -181,10 +181,12 @@ top:25px;
 #txt_input
 {
 font-size: 20px;
+height: 35px
 }
 #txt_res{
 
 font-size:20px;
+height: 35px
 
 }
 
@@ -194,6 +196,8 @@ font-size:20px;
     color:orangered;
 
 }
+
+
 
 
 
