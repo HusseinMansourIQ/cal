@@ -18,7 +18,7 @@
 
   
  <!-- <hr><hr><hr> -->
-<button id="clean" onclick= clear()>c</button><button id="back" onclick=clear_all()>ce</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="division" onclick=Divid_fill()>÷</button> <br>
+<button id="clean" onclick= clear_g()>c</button><button id="back" onclick=clear_all()>ce</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="division" onclick=Divid_fill()>÷</button> <br>
 
 <button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus" onclick=Subtract_fill()>-</button><button id="percent" onclick=mod()>%</button> <br>
 
@@ -306,14 +306,13 @@ alert(err.message);
     //clear btn
     
 
-    function clear()
-    
+    function clear_g()
     {
-      document.getElementById("txt_input").value= 0;
-        document.getElementById("txt_res").value =0;
-        type=0;
-        no2_txt = 0;
-        no1_txt = 0;
+      document.getElementById("txt_input").value = "";
+      document.getElementById("txt_res").value = "";
+      type = 0;
+      no2_txt = 0
+      no1_txt = 0
 
     }
 

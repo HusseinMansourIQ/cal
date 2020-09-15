@@ -71,7 +71,7 @@ button
    place-items: center;
     font-size: 30px;
     width: 50px;
-    height: 58px;
+    height: 70px;
      justify-items: center;
     align-items: center; 
 border-collapse: collapse;
@@ -151,7 +151,7 @@ background-color: orangered;
 #result{
     
 background-color: white;
-height: 35px;
+height: 42px;
 }
 #space
 {
