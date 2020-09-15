@@ -8,8 +8,7 @@
 <body>
 
 
-
-
+  
 
 <br><br>
 <div id="bskot">
@@ -19,7 +18,7 @@
 
   
  <!-- <hr><hr><hr> -->
-<button id="clean" onclick= clear()>c</button><button id="division" onclick=Divid_fill()>÷</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="back" onclick=clear_all()>-></button> <br>
+<button id="clean" onclick= clear()>c</button><button id="back" onclick=clear_all()>ce</button><button id="multiplication" onclick=Multi_fill()>×</button><button id="division" onclick=Divid_fill()>÷</button> <br>
 
 <button id="1" onclick= no1() >1</button><button id="2" onclick= no2()>2</button><button id="3" onclick= no3()>3</button><button id="minus" onclick=Subtract_fill()>-</button><button id="percent" onclick=mod()>%</button> <br>
 
@@ -50,6 +49,7 @@
   <script>
 
 //هذا التاك لملء ال انبوت تيكست بالبيانات عن طريق البوتنات
+try {
 
     var input  ;
 
@@ -182,12 +182,18 @@
 
 
     }
+}
+catch(err)
+{
+alert(err.message);
+}
          //انتهاء تفعيل البوتنات 
 
 
   </script>
 
   <script>
+    try {
     //تاك معرفة نوع العملية المراد العمل بهى
     var type = 0;
     var no1_txt = 0;
@@ -230,10 +236,18 @@
     //parseInt(no1_txt);
     document.getElementById("txt_input").value = "";
     }
+    }
+    catch(err)
+    {
+      alert(err>message);
+    }
 //انتهاء تاك معرفة نوع العملية المراد العمل بهى
   </script>
 
   <script>
+
+    try{
+    
     var no2_txt = 0;
     var result ;
 
@@ -273,11 +287,22 @@
         document.getElementById("txt_res").value = parseFloat(result);
       }
 
+    
+
+      
+
 
     }
+
+    }
+    catch(err)
+      {
+        alert(err.message);
+      }
   </script>
 
   <script>
+    try{
     //clear btn
     
 
@@ -301,6 +326,12 @@
         document.getElementById("txt_input").value =re;
 
        }
+
+    }
+    catch(err)
+    {
+      alert(err.message);
+    }
      
   </script>
  
